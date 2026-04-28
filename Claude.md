@@ -47,15 +47,27 @@ The goal is accurate, zero-loss throughput measurement (pps and Mbps) across sta
 
 
 Following is example of reflect config on Juniper device:
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 source-mac-address 40:b4:f0:01:01:01
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 destination-mac-address 40:b4:f0:02:02:02
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 service-type elan
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 ip-swap
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 ignore-test-interface-state
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 check-test-interface-mtu
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 disable-signature-check
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 mode reflect
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 family bridge
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 direction egress
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 test-interface ge-0/0/0.0
+
 set services rpm rfc2544-benchmarking tests test-name reflect_elan_l3 destination-ipv4-address 192.168.101.1
